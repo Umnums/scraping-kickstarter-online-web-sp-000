@@ -13,7 +13,8 @@ def create_project_hash
         :location => project.css("span.location-name").text,
         :percent => projects.css("li.first.funded strong").text
   end
+  projects
 end
-end
+
 
 create_project_hash
