@@ -4,7 +4,7 @@ require 'pry'
 def create_project_hash
   #this opens a file and reads it into a variable
   html = File.read('fixtures/kickstarter.html')
-
+  #extract info using nokogiri
   kickstarter = Nokogiri::HTML(html)
 
 end
