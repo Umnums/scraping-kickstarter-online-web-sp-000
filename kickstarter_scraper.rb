@@ -17,4 +17,4 @@ def create_project_hash
 end
 
 
-create_project_hash
+print create_project_hash
