@@ -12,12 +12,8 @@ def create_project_hash
         :description => project.css("p.bbcard_blurb").text,
         :location => project.css("span.location-name").text,
         :percent => projects.css("li.first.funded strong").text
-      }
-  #image = projects.css("img.projectphoto-little").attribute("src").text
-
-  #location = projects.css("span.location-name").text
-  percent = projects.css("li.first.funded strong").text
-
+  end
+end
 end
 
 create_project_hash
