@@ -8,10 +8,10 @@ def create_project_hash
   kickstarter.css("li.project.grid_4").each do |project|
       title = project.css("h2.bbcard_name strong a").text
       projects[title.to_sym] = {
-        :image_link => projects.css("img.projectphoto-little").attribute("src").text,
+        :image_link => project.css("img.projectphoto-little").attribute("src").text,
         :description => project.css("p.bbcard_blurb").text,
         :location => project.css("span.location-name").text,
-        :percent => projects.css("li.first.funded strong").text
+        :percent => project.css("li.first.funded strong").text
       }
   end
   projects
