@@ -8,6 +8,7 @@ def create_project_hash
   #image = projects.css("img.projectphoto-little").attribute("src").text
   #title = project.css("h2.bbcard_name strong a").text
   #location = projects.css("span.location-name").text
+  percent = projects.css("li.first funded strong").text
 
 end
 
